@@ -1,33 +1,83 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 💖 Candidate Search App
 
-Currently, two official plugins are available:
+A **fun and simple React app** that lets you **discover GitHub users** like swiping through potential candidates! Built with **TypeScript, React, and Vite**. Styled for a **modern, cute, and clean user experience**. 💻✨
 
-* [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md), which uses [Babel](https://babeljs.io/) for Fast Refresh
-* [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc), which uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
+- 🔍 Fetch random GitHub users.
+- 📝 View their basic profile details (name, location, company, etc.).
+- ❤️ Accept or ❌ Reject users like a dating app (Tinder vibes).
+- 💾 Save accepted users to **localStorage**.
+- 🖼️ Beautiful pastel turquoise background and round card UI.
 
-## Expanding the ESLint configuration
+## 📸 Preview
+![App Screenshot](https://via.placeholder.com/600x300.png?text=Insert+App+Screenshot)
 
-If you're developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
+- **React + TypeScript**
+- **Vite** for fast development and build.
+- **Styled with CSS** for a fresh, clean, and modern look.
+- **GitHub API** integration.
 
-* Configure the top-level `parserOptions` property as follows:
+## 🚀 Live Demo
+🔗 [See it Live on Render](https://candidates-search-app.onrender.com)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## 🏃‍♀️ Run Locally
 
-* Replace `plugin:@typescript-eslint/recommended` with `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`.
-* Optionally, add `plugin:@typescript-eslint/stylistic-type-checked`.
-* Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` and `plugin:react/jsx-runtime` to the `extends` list.
+Clone the project:
 
----
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+\`\`\`bash
+git clone https://github.com/Carlosdpastrana/candidates-search-app.git
+\`\`\`
+
+Go to the project directory:
+
+\`\`\`bash
+cd candidates-search-app
+\`\`\`
+
+Install dependencies:
+
+\`\`\`bash
+npm install
+\`\`\`
+
+Create an **\`.env\`** file in the `environment` folder:
+
+\`\`\`
+VITE_GITHUB_TOKEN=YOUR_GITHUB_PERSONAL_ACCESS_TOKEN
+\`\`\`
+
+Build the project:
+
+\`\`\`bash
+npm run build
+\`\`\`
+
+Run locally:
+
+\`\`\`bash
+npx serve -s dist
+\`\`\`
+
+The app will be running at [http://localhost:3000](http://localhost:3000)
+
+## ⚙️ Environment Variables
+| Variable            | Description                  |
+|---------------------|------------------------------|
+| `VITE_GITHUB_TOKEN` | GitHub Personal Access Token |
+
+## 🐛 Troubleshooting
+- **401 Unauthorized?**  
+  Make sure your `.env` file is set up with a **valid GitHub token**.
+- **502 on Render?**  
+  Set the **Build Command** and **Start Command** on Render to:
+  - **Build:** `npm install && npm run build`
+  - **Start:** `npx serve -s dist`
+
+## ❤️ Acknowledgments
+Special thanks to **GitHub API** for providing the data and **Render** for hosting.
+
+## 📧 Contact
+Have questions? Feel free to reach out:
+- GitHub: [Carlosdpastrana](https://github.com/Carlosdpastrana)
